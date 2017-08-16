@@ -10,10 +10,6 @@
         dest: 'bundle.js',
         moduleName: 'dat',
         format: 'iife',
-
-        //  required, or results in Error: Could not load crypto. No such file or directory, open 'crypto'
-        external: ['crypto'],
-        
         plugins: [
 
             builtins(),
