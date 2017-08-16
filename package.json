@@ -18,7 +18,8 @@
     "standard": "standard",
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
     "test": "standard && npm run deps && tape 'test/*.js' | tap-spec",
-    "package": "pkg package.json -o dist/dat"
+    "package": "pkg package.json -o dist/dat",
+    "rollup": "rollup -c --output dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -65,6 +66,10 @@
     "random-access-memory": "^2.4.0",
     "recursive-readdir-sync": "^1.0.6",
     "request": "^2.81.0",
+    "rollup": "^0.47.4",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "standard": "*",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3",
